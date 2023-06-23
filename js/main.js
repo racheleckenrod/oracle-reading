@@ -9,7 +9,7 @@ async function apiRequest(){
     console.log("card test")
     const cardNumber = document.querySelector('input').value
     try{
-        const response = await fetch(`https://oracle-api.netlify.app/api/${cardNumber}`)
+        const response = await fetch(`https://oracle-api.up.railway.app/api/${cardNumber}`)
         const data = await response.json()
 
         console.log(data)
@@ -32,7 +32,7 @@ document.querySelector('#random').addEventListener('click', () => { console.log(
 
 async function randomCardRequest(){
     try{
-        const response = await fetch('https://oracle-api.netlify.app//api/random')
+        const response = await fetch('https://oracle-api.up.railway.app/api/random')
         const data = await response.json()
 
         console.log("data", data)
