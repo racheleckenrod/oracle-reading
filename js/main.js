@@ -1,7 +1,27 @@
-document.querySelector('button').addEventListener('click', apiRequest)
+document.querySelector('#lookup').addEventListener('click', apiRequest)
 
 
 // document.querySelector('img').classList.remove('orientation')
+
+async function apiCardRequest(card){
+    console.log("card test")
+    const cardNumber = card
+    try{
+        const response = await fetch(`https://oracle-api.up.railway.app/api/${cardNumber}`)
+        const data = await response.json()
+
+        console.log(data)
+        document.querySelector('h2').innerText = 'Name: ' + data.name
+        document.querySelector('h3').innerText = 'Number: ' + data.number
+        document.querySelector('img').src = data.img
+        
+
+
+    }catch(error){
+        console.log(error)
+    }
+}
+
 
 
 async function apiRequest(){
