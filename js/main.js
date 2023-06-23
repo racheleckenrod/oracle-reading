@@ -26,7 +26,7 @@ async function apiRequest(){
 
 // document.querySelector('#random').addEventListener('click', randomCardRequest)
 // document.querySelector('#random').addEventListener('click', reversedOrNot)
-document.querySelector('#random').addEventListener('click', () => { console.log("event"), randomCardRequest(), reversedOrNot()})
+document.querySelector('#random').addEventListener('click', () => { console.log("event"), randomCardRequest()})
 
 
 
@@ -35,10 +35,11 @@ async function randomCardRequest(){
         const response = await fetch('https://oracle-api.up.railway.app/api/random')
         const data = await response.json()
 
-        console.log("data", data)
+        console.log("random data", data)
         document.querySelector('h2').innerText = 'Name: ' + data.name
         document.querySelector('h3').innerText = 'Number: ' + data.number
         document.querySelector('img').src = data.img
+        reversedOrNot()
 
        
 
