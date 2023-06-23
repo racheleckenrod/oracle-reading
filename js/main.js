@@ -1,4 +1,4 @@
-document.querySelector('#lookup').addEventListener('click', apiRequest)
+// document.querySelector('#lookup').addEventListener('click', apiRequest)
 
 
 // document.querySelector('img').classList.remove('orientation')
