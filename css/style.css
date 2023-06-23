@@ -17,6 +17,11 @@ img{
     width: 50%;
 }
 
+button{
+    padding:3px;
+    margin: 5px 0;
+}
+
 @media (max-width: 600px){
     img{
         width: 100%;
