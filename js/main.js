@@ -1,6 +1,5 @@
 document.querySelector('button').addEventListener('click', apiRequest)
-// document.querySelector('button').addEventListener('click', reversedOrNot)
-// document.querySelector('button').addEventListener('click', () => {reversedOrNot, apiRequest})
+
 
 // document.querySelector('img').classList.remove('orientation')
 
@@ -25,7 +24,6 @@ async function apiRequest(){
 }
 
 // document.querySelector('#random').addEventListener('click', randomCardRequest)
-// document.querySelector('#random').addEventListener('click', reversedOrNot)
 document.querySelector('#random').addEventListener('click', () => { console.log("event"), randomCardRequest()})
 
 
