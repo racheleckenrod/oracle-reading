@@ -1,0 +1,29 @@
+body{
+    padding: 60px;
+    background-image: url("/img/crystals-unsplash.jpg");
+}
+
+img{
+    width: 50%;
+    border: 2px solid black;
+}
+
+.orientation {
+    transform: rotate(180deg);
+}
+.my-class{
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+}
+
+@media (max-width: 600px){
+    img{
+        width: 100%;
+    }
+
+    .my-class{
+        width: 100%;
+        padding: 8px;
+    }
+}
