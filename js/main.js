@@ -2,7 +2,7 @@ document.querySelector('button').addEventListener('click', apiRequest)
 // document.querySelector('button').addEventListener('click', reversedOrNot)
 // document.querySelector('button').addEventListener('click', () => {reversedOrNot, apiRequest})
 
-document.querySelector('img').classList.toggle('orientation')
+// document.querySelector('img').classList.remove('orientation')
 
 
 async function apiRequest(){
@@ -39,7 +39,7 @@ async function randomCardRequest(){
         document.querySelector('h2').innerText = 'Name: ' + data.name
         document.querySelector('h3').innerText = 'Number: ' + data.number
         document.querySelector('img').src = data.img
-        reversedOrNot()
+        // reversedOrNot()
 
        
 
@@ -50,12 +50,15 @@ async function randomCardRequest(){
    
 }
 
-function reversedOrNot(){
-    let orient = Math.random() * 10
-    console.log(orient)
-    if(orient < 5){
-        document.querySelector('img').classList.toggle('orientation')
-    }
-}
+// function reversedOrNot(){
+//     let orient = Math.random() * 10
+//     console.log(orient)
+//     if(orient < 5){
+//         document.querySelector('img').classList.add('orientation')
+//     }else{
+//         document.querySelector('img').classList.remove('orientation')
+
+//     }
+// }
 
 // reversedOrNot()

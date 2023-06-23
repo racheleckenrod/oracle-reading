@@ -8,9 +8,9 @@ img{
     border: 2px solid black;
 }
 
-.orientation {
+/* .orientation {
     transform: rotate(180deg);
-}
+} */
 .my-class{
     background-color: white;
     padding: 30px;
