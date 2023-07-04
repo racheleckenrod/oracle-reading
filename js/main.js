@@ -20,7 +20,8 @@ async function apiCardRequest(card){
         document.querySelector('h2').innerText = 'Name: ' + data.name
         document.querySelector('#number').innerText = 'Number: ' + data.number
         document.querySelector('img').src = data.img
-        document.querySelector('#meaning').innerText = 'Meaning: ' + data.meaning
+        document.querySelector('#meaning').innerText = 'Meaning: ' 
+        document.querySelector('#text').innerText = data.meaning
         
 
 
@@ -66,7 +67,8 @@ async function randomCardRequest(){
         document.querySelector('h2').innerText = 'Name: ' + data.name
         document.querySelector('#number').innerText = 'Number: ' + data.number
         document.querySelector('img').src = data.img
-        document.querySelector('#meaning').innerText = 'Meaning: ' + data.meaning
+        document.querySelector('#meaning').innerText = 'Meaning: '
+        document.querySelector('#text').innerText = data.meaning
 
         // reversedOrNot()
 
