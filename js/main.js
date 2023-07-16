@@ -17,7 +17,7 @@ async function apiCardRequest(card){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h2').innerText = 'Name: ' + data.name
+        document.querySelector('#result').innerText = 'Name: ' + data.name
         document.querySelector('#number').innerText = 'Number: ' + data.number
         document.querySelector('img').src = data.img
         document.querySelector('#meaning').innerText = 'Meaning: ' 
@@ -64,7 +64,7 @@ async function randomCardRequest(){
         const data = await response.json()
 
         console.log("random data", data)
-        document.querySelector('h2').innerText = 'Name: ' + data.name
+        document.querySelector('#result').innerText = 'Name: ' + data.name
         document.querySelector('#number').innerText = 'Number: ' + data.number
         document.querySelector('img').src = data.img
         document.querySelector('#meaning').innerText = 'Meaning: '
